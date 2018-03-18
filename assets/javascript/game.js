@@ -193,8 +193,8 @@ $(document).ready(function () {
 
                 charAttack++
 
-                charHealth = charHealth - 15;
-                squirHealth = squirHealth - (5 * charAttack);
+                charHealth = charHealth - 16;
+                squirHealth = squirHealth - (7 * charAttack);
 
                 $("#charHealth").text("HP: " + charHealth);
                 $("#squirHealth").text("HP: " + squirHealth);
@@ -229,7 +229,7 @@ $(document).ready(function () {
                 charAttack++
 
                 charHealth = charHealth - 5;
-                bulbHealth = bulbHealth - (5 * charAttack);
+                bulbHealth = bulbHealth - (7 * charAttack);
 
                 $("#charHealth").text("HP: " + charHealth);
                 $("#bulbHealth").text("HP: " + bulbHealth);
@@ -262,8 +262,8 @@ $(document).ready(function () {
 
                 charAttack++
 
-                charHealth = charHealth - 10;
-                pikaHealth = pikaHealth - (5 * charAttack);
+                charHealth = charHealth - 12;
+                pikaHealth = pikaHealth - (7 * charAttack);
 
                 $("#charHealth").text("HP: " + charHealth);
                 $("#pikaHealth").text("HP: " + pikaHealth);
