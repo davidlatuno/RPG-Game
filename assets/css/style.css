@@ -1,3 +1,16 @@
 .pokemon {
     width: 200px;
 }
+
+.health {
+
+    width: 200px;
+    float:left;
+
+}
+
+#yours, #enemy, h1, #attack, #defend {
+
+    clear: both;
+
+}
