@@ -188,11 +188,12 @@ $(document).ready(function () {
 
         if (attackBool) {
 
+            // Charmander Picked
             if (charPick && squirDefend) {
 
                 charAttack++
 
-                charHealth = charHealth - 20;
+                charHealth = charHealth - 15;
                 squirHealth = squirHealth - (5 * charAttack);
 
                 $("#charHealth").text("HP: " + charHealth);
@@ -208,7 +209,7 @@ $(document).ready(function () {
 
                     squirDefend = !squirDefend;
 
-                    if (winCount === 3) {
+                    if (winCount === 3 && charHealth > 0) {
                         alert("YOU WIN!");
                     }
                 }
@@ -243,7 +244,7 @@ $(document).ready(function () {
 
                     bulbDefend = !bulbDefend;
 
-                    if (winCount === 3) {
+                    if (winCount === 3 && charHealth > 0) {
                         alert("YOU WIN!");
                     }
                 }
@@ -261,7 +262,7 @@ $(document).ready(function () {
 
                 charAttack++
 
-                charHealth = charHealth - 5;
+                charHealth = charHealth - 10;
                 pikaHealth = pikaHealth - (5 * charAttack);
 
                 $("#charHealth").text("HP: " + charHealth);
@@ -277,12 +278,117 @@ $(document).ready(function () {
 
                     pikaDefend = !pikaDefend;
 
-                    if (winCount === 3) {
+                    if (winCount === 3 && charHealth > 0) {
                         alert("YOU WIN!");
                     }
                 }
 
                 if (charHealth <= 0) {
+
+                    alert("YOU LOSE");
+
+                    attackBool = !attackBool;
+                }
+
+            }
+
+            // Squirtle Picked
+
+            if (squirPick && charDefend) {
+
+                squirAttack++
+
+                squirHealth = squirHealth - 5;
+                charHealth = charHealth - (5 * squirAttack);
+
+                $("#squirHealth").text("HP: " + squirHealth);
+                $("#charHealth").text("HP: " + charHealth);
+
+                if (charHealth <= 0) {
+
+                    winCount++;
+
+                    $("#defend").empty();
+
+                    pickDefend = !pickDefend;
+
+                    charDefend = !charDefend;
+
+                    if (winCount === 3 && squirHealth > 0) {
+                        alert("YOU WIN!");
+                    }
+                }
+
+                if (squirHealth <= 0) {
+
+                    alert("YOU LOSE");
+
+                    attackBool = !attackBool;
+                }
+
+
+            }
+
+            if (squirPick && bulbDefend) {
+
+                squirAttack++
+
+                squirHealth = squirHealth - 10;
+                bulbHealth = bulbHealth - (5 * squirAttack);
+
+                $("#squirHealth").text("HP: " + squirHealth);
+                $("#bulbHealth").text("HP: " + bulbHealth);
+
+                if (bulbHealth <= 0) {
+
+                    winCount++
+
+                    $("#defend").empty();
+
+                    pickDefend = !pickDefend;
+
+                    bulbDefend = !bulbDefend;
+
+                    if (winCount === 3 && squirHealth > 0) {
+                        alert("YOU WIN!");
+                    }
+                }
+
+                if (squirHealth <= 0) {
+
+                    alert("YOU LOSE");
+
+                    attackBool = !attackBool;
+                }
+
+            }
+
+            if (squirPick && pikaDefend) {
+
+                squirAttack++
+
+                squirHealth = squirHealth - 15;
+                pikaHealth = pikaHealth - (5 * squirAttack);
+
+                $("#squirHealth").text("HP: " + squirHealth);
+                $("#pikaHealth").text("HP: " + pikaHealth);
+
+                if (pikaHealth <= 0) {
+
+                    winCount++;
+
+                    $("#defend").empty();
+
+                    pickDefend = !pickDefend;
+
+                    pikaDefend = !pikaDefend;
+
+                    if (winCount === 3 && squirHealth > 0) {
+                        alert("YOU WIN!");
+                    }
+                }
+
+                if (squirHealth <= 0) {
 
                     alert("YOU LOSE");
 
