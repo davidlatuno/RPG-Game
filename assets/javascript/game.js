@@ -28,22 +28,22 @@ var pickDefend = true;
 
 function go() {
 
-    var charmander = $("#start").prepend("<div class='health'><img class='pokemon charmander' src='assets/images/500px-004Charmander.png' alt='charmander'><br><div id='charHealth'>HP:100</div></div>");
+    var charmander = $("#start").prepend("<div class='health charmander'><img class='pokemon' src='assets/images/500px-004Charmander.png' alt='charmander'><br><div id='charHealth'>HP:100</div></div>");
 
-    var squirtle = $("#start").prepend("<div class='health'><img class='pokemon squirtle' src='assets/images/500px-007Squirtle.png' alt='squirtle'><br><div id='squirHealth'>HP:100</div></div>");
+    var squirtle = $("#start").prepend("<div class='health squirtle'><img class='pokemon' src='assets/images/500px-007Squirtle.png' alt='squirtle'><br><div id='squirHealth'>HP:100</div></div>");
 
-    var bulbasaur = $("#start").prepend("<div class='health'><img class='pokemon bulbasaur' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'><br><div id='bulbHealth'>HP:100</div></div>");
+    var bulbasaur = $("#start").prepend("<div class='health bulbasaur'><img class='pokemon' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'><br><div id='bulbHealth'>HP:100</div></div>");
 
-    var pikachu = $("#start").prepend("<div class='health'><img class='pokemon pikachu' src='assets/images/500px-025Pikachu.png' alt='pikachu'><br><div id='pikaHealth'>HP:100</div></div>");
+    var pikachu = $("#start").prepend("<div class='health pikachu'><img class='pokemon' src='assets/images/500px-025Pikachu.png' alt='pikachu'><br><div id='pikaHealth'>HP:100</div></div>");
 }
 
 function pikachu() {
 
-    var charmander = $("#enemy").prepend("<img class='pokemon charmander' src='assets/images/500px-004Charmander.png' alt='charmander'>");
+    var charmander = $("#enemy").prepend("<div class='health charmander'><img class='pokemon' src='assets/images/500px-004Charmander.png' alt='charmander'><br><div id='charHealth'>HP:100</div></div>");
 
-    var squirtle = $("#enemy").prepend("<img class='pokemon squirtle' src='assets/images/500px-007Squirtle.png' alt='squirtle'>");
+    var squirtle = $("#enemy").prepend("<div class='health squirtle'><img class='pokemon' src='assets/images/500px-007Squirtle.png' alt='squirtle'><br><div id='squirHealth'>HP:100</div></div>");
 
-    var bulbasaur = $("#enemy").prepend("<img class='pokemon bulbasaur' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'>");
+    var bulbasaur = $("#enemy").prepend("<div class='health bulbasaur'><img class='pokemon' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'><br><div id='bulbHealth'>HP:100</div></div>");
 
     pikaPick = !pikaPick;
 
@@ -51,11 +51,11 @@ function pikachu() {
 
 function charmander() {
 
-    var squirtle = $("#enemy").prepend("<img class='pokemon squirtle' src='assets/images/500px-007Squirtle.png' alt='squirtle'>");
+    var squirtle = $("#enemy").prepend("<div class='health squirtle'><img class='pokemon' src='assets/images/500px-007Squirtle.png' alt='squirtle'><br><div id='squirHealth'>HP:100</div></div>");
 
-    var bulbasaur = $("#enemy").prepend("<img class='pokemon bulbasaur' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'>");
+    var bulbasaur = $("#enemy").prepend("<div class='health bulbasaur'><img class='pokemon' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'><br><div id='bulbHealth'>HP:100</div></div>");
 
-    var pikachu = $("#enemy").prepend("<img class='pokemon pikachu' src='assets/images/500px-025Pikachu.png' alt='pikachu'>");
+    var pikachu = $("#enemy").prepend("<div class='health pikachu'><img class='pokemon' src='assets/images/500px-025Pikachu.png' alt='pikachu'><br><div id='pikaHealth'>HP:100</div></div>");
 
     charPick = !charPick;
 
@@ -63,22 +63,22 @@ function charmander() {
 
 function squirtle() {
 
-    var charmander = $("#enemy").prepend("<img class='pokemon charmander' src='assets/images/500px-004Charmander.png' alt='charmander'>");
+    var charmander = $("#enemy").prepend("<div class='health charmander'><img class='pokemon' src='assets/images/500px-004Charmander.png' alt='charmander'><br><div id='charHealth'>HP:100</div></div>");
 
-    var bulbasaur = $("#enemy").prepend("<img class='pokemon bulbasaur' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'>");
+    var bulbasaur = $("#enemy").prepend("<div class='health bulbasaur'><img class='pokemon' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'><br><div id='bulbHealth'>HP:100</div></div>");
 
-    var pikachu = $("#enemy").prepend("<img class='pokemon pikachu' src='assets/images/500px-025Pikachu.png' alt='pikachu'>");
+    var pikachu = $("#enemy").prepend("<div class='health pikachu'><img class='pokemon' src='assets/images/500px-025Pikachu.png' alt='pikachu'><br><div id='pikaHealth'>HP:100</div></div>");
 
     squirPick = !squirPick;
 }
 
 function bulbasaur() {
 
-    var charmander = $("#enemy").prepend("<img class='pokemon charmander' src='assets/images/500px-004Charmander.png' alt='charmander'>");
+    var charmander = $("#enemy").prepend("<div class='health charmander'><img class= 'pokemon' src='assets/images/500px-004Charmander.png' alt='charmander'><br><div id='charHealth'>HP:100</div></div>");
 
-    var squirtle = $("#enemy").prepend("<img class='pokemon squirtle' src='assets/images/500px-007Squirtle.png' alt='squirtle'>");
+    var squirtle = $("#enemy").prepend("<div class='health squirtle'><img class='pokemon' src='assets/images/500px-007Squirtle.png' alt='squirtle'><br><div id='squirHealth'>HP:100</div></div>");
 
-    var pikachu = $("#enemy").prepend("<img class='pokemon pikachu' src='assets/images/500px-025Pikachu.png' alt='pikachu'>");
+    var pikachu = $("#enemy").prepend("<div class='health pikachu'><img class='pokemon' src='assets/images/500px-025Pikachu.png' alt='pikachu'><br><div id='pikaHealth'>HP:100</div></div>");
 
     bulbPick = !bulbPick;
 
@@ -101,7 +101,7 @@ name();
 
 $(document).ready(function () {
 
-    $("#start").on("click", ".pokemon", function () {
+    $("#start").on("click", ".health", function () {
 
         if (pickStart) {
 
@@ -137,7 +137,7 @@ $(document).ready(function () {
         }
     })
 
-    $("#enemy").on("click", ".pokemon", function () {
+    $("#enemy").on("click", ".health", function () {
 
         name();
 
