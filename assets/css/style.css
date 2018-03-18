@@ -6,6 +6,7 @@
 
     width: 200px;
     float:left;
+    text-align: center;
 
 }
 
@@ -13,4 +14,17 @@
 
     clear: both;
 
+}
+
+#start .health {
+    border: 1px solid green;
+}
+
+#enemy .health  {
+
+    border: 1px solid red;
+}
+
+#defend .health {
+    border: 1px solid red;
 }
