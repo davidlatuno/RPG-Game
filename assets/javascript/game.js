@@ -184,6 +184,24 @@ $(document).ready(function () {
 
         }
 
+        if (charPick && bulbDefend) {
+
+            charHealth = charHealth - 5;
+            bulbHealth = bulbHealth - 10;
+
+            $("#charHealth").text("HP: " + charHealth);
+            $("#bulbHealth").text("HP: " + bulbHealth);
+
+            if (bulbHealth <= 0) {
+
+                $("#defend").empty();
+
+                pickDefend = !pickDefend;
+
+            }
+
+        }
+
 
 
     })
