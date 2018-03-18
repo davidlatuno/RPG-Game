@@ -63,39 +63,65 @@ function name() {
 }
 
 go();
+
 name();
+
+var pickStart = true;
+
+var pickDefend = true;
 
 $(document).ready(function () {
 
     $("#start").on("click", ".pokemon", function () {
 
+        if (pickStart) {
 
-        $("#start").empty();
+            $("#start").empty();
 
-        $("#start").append(this);
+            $("#start").append(this);
 
-        var pick = $(this).attr("data-pokename");
+            var pick = $(this).attr("data-pokename");
 
-        if (pick === "pikachu") {
+            if (pick === "pikachu") {
 
-            pikachu();
-        }
+                pikachu();
+            }
 
-        if (pick === "charmander") {
+            if (pick === "charmander") {
 
-            charmander();
-        }
+                charmander();
+            }
 
-        if (pick === "bulbasaur") {
+            if (pick === "bulbasaur") {
 
-            bulbasaur();
-        }
+                bulbasaur();
+            }
 
-        if (pick === "squirtle") {
+            if (pick === "squirtle") {
 
-            squirtle();
+                squirtle();
+            }
+
+            $("#yours").html("Your Character");
+
+            pickStart = !pickStart;
         }
     })
+
+    $("#enemy").on("click", ".pokemon", function () {
+
+        if (pickDefend) {
+
+            $("#defend").append(this);
+
+
+            pickDefend = !pickDefend;
+        }
+
+    })
+
+    
+
 
 
 })
