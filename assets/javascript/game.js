@@ -139,6 +139,8 @@ $(document).ready(function () {
 
     $("#enemy").on("click", ".pokemon", function () {
 
+        name();
+
         if (pickDefend) {
 
             $("#defend").append(this);
