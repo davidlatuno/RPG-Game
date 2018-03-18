@@ -1,10 +1,10 @@
 var pikaHealth = 100;
 
-var charHealth = 100;
+var charHealth = 120;
 
-var squirHealth = 100;
+var squirHealth = 150;
 
-var bulbHealth = 100;
+var bulbHealth = 180;
 
 var pikaPick = false;
 
@@ -40,22 +40,22 @@ var winCount = 0;
 
 function go() {
 
-    var charmander = $("#start").prepend("<div class='health charmander'><img class='pokemon' src='assets/images/500px-004Charmander.png' alt='charmander'><br><div id='charHealth'>HP:100</div></div>");
+    var charmander = $("#start").prepend("<div class='health charmander'><img class='pokemon' src='assets/images/500px-004Charmander.png' alt='charmander'><br><div id='charHealth'>HP:120</div></div>");
 
-    var squirtle = $("#start").prepend("<div class='health squirtle'><img class='pokemon' src='assets/images/500px-007Squirtle.png' alt='squirtle'><br><div id='squirHealth'>HP:100</div></div>");
+    var squirtle = $("#start").prepend("<div class='health squirtle'><img class='pokemon' src='assets/images/500px-007Squirtle.png' alt='squirtle'><br><div id='squirHealth'>HP:150</div></div>");
 
-    var bulbasaur = $("#start").prepend("<div class='health bulbasaur'><img class='pokemon' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'><br><div id='bulbHealth'>HP:100</div></div>");
+    var bulbasaur = $("#start").prepend("<div class='health bulbasaur'><img class='pokemon' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'><br><div id='bulbHealth'>HP:180</div></div>");
 
     var pikachu = $("#start").prepend("<div class='health pikachu'><img class='pokemon' src='assets/images/500px-025Pikachu.png' alt='pikachu'><br><div id='pikaHealth'>HP:100</div></div>");
 }
 
 function pikachu() {
 
-    var charmander = $("#enemy").prepend("<div class='health charmander'><img class='pokemon' src='assets/images/500px-004Charmander.png' alt='charmander'><br><div id='charHealth'>HP:100</div></div>");
+    var charmander = $("#enemy").prepend("<div class='health charmander'><img class='pokemon' src='assets/images/500px-004Charmander.png' alt='charmander'><br><div id='charHealth'>HP:120</div></div>");
 
-    var squirtle = $("#enemy").prepend("<div class='health squirtle'><img class='pokemon' src='assets/images/500px-007Squirtle.png' alt='squirtle'><br><div id='squirHealth'>HP:100</div></div>");
+    var squirtle = $("#enemy").prepend("<div class='health squirtle'><img class='pokemon' src='assets/images/500px-007Squirtle.png' alt='squirtle'><br><div id='squirHealth'>HP:150</div></div>");
 
-    var bulbasaur = $("#enemy").prepend("<div class='health bulbasaur'><img class='pokemon' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'><br><div id='bulbHealth'>HP:100</div></div>");
+    var bulbasaur = $("#enemy").prepend("<div class='health bulbasaur'><img class='pokemon' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'><br><div id='bulbHealth'>HP:180</div></div>");
 
     pikaPick = !pikaPick;
 
@@ -63,9 +63,9 @@ function pikachu() {
 
 function charmander() {
 
-    var squirtle = $("#enemy").prepend("<div class='health squirtle'><img class='pokemon' src='assets/images/500px-007Squirtle.png' alt='squirtle'><br><div id='squirHealth'>HP:100</div></div>");
+    var squirtle = $("#enemy").prepend("<div class='health squirtle'><img class='pokemon' src='assets/images/500px-007Squirtle.png' alt='squirtle'><br><div id='squirHealth'>HP:150</div></div>");
 
-    var bulbasaur = $("#enemy").prepend("<div class='health bulbasaur'><img class='pokemon' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'><br><div id='bulbHealth'>HP:100</div></div>");
+    var bulbasaur = $("#enemy").prepend("<div class='health bulbasaur'><img class='pokemon' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'><br><div id='bulbHealth'>HP:180</div></div>");
 
     var pikachu = $("#enemy").prepend("<div class='health pikachu'><img class='pokemon' src='assets/images/500px-025Pikachu.png' alt='pikachu'><br><div id='pikaHealth'>HP:100</div></div>");
 
@@ -75,9 +75,9 @@ function charmander() {
 
 function squirtle() {
 
-    var charmander = $("#enemy").prepend("<div class='health charmander'><img class='pokemon' src='assets/images/500px-004Charmander.png' alt='charmander'><br><div id='charHealth'>HP:100</div></div>");
+    var charmander = $("#enemy").prepend("<div class='health charmander'><img class='pokemon' src='assets/images/500px-004Charmander.png' alt='charmander'><br><div id='charHealth'>HP:120</div></div>");
 
-    var bulbasaur = $("#enemy").prepend("<div class='health bulbasaur'><img class='pokemon' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'><br><div id='bulbHealth'>HP:100</div></div>");
+    var bulbasaur = $("#enemy").prepend("<div class='health bulbasaur'><img class='pokemon' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'><br><div id='bulbHealth'>HP:180</div></div>");
 
     var pikachu = $("#enemy").prepend("<div class='health pikachu'><img class='pokemon' src='assets/images/500px-025Pikachu.png' alt='pikachu'><br><div id='pikaHealth'>HP:100</div></div>");
 
@@ -86,9 +86,9 @@ function squirtle() {
 
 function bulbasaur() {
 
-    var charmander = $("#enemy").prepend("<div class='health charmander'><img class= 'pokemon' src='assets/images/500px-004Charmander.png' alt='charmander'><br><div id='charHealth'>HP:100</div></div>");
+    var charmander = $("#enemy").prepend("<div class='health charmander'><img class= 'pokemon' src='assets/images/500px-004Charmander.png' alt='charmander'><br><div id='charHealth'>HP:120</div></div>");
 
-    var squirtle = $("#enemy").prepend("<div class='health squirtle'><img class='pokemon' src='assets/images/500px-007Squirtle.png' alt='squirtle'><br><div id='squirHealth'>HP:100</div></div>");
+    var squirtle = $("#enemy").prepend("<div class='health squirtle'><img class='pokemon' src='assets/images/500px-007Squirtle.png' alt='squirtle'><br><div id='squirHealth'>HP:150</div></div>");
 
     var pikachu = $("#enemy").prepend("<div class='health pikachu'><img class='pokemon' src='assets/images/500px-025Pikachu.png' alt='pikachu'><br><div id='pikaHealth'>HP:100</div></div>");
 
