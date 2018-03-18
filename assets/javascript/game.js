@@ -174,6 +174,15 @@ $(document).ready(function () {
 
     $("#attack").on("click", function() {
 
+        if (charPick && squirDefend) {
+
+            charHealth = charHealth - 10;
+            squirHealth = squirHealth - 5;
+
+            $("#charHealth").text("HP: " + charHealth);
+            $("#squirHealth").text("HP: " + squirHealth); 
+
+        }
 
 
 
