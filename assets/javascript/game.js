@@ -1,3 +1,30 @@
+var pikaHealth = 100;
+
+var charHealth = 100;
+
+var squirHealth = 100;
+
+var bulbHealth = 100;
+
+var pikaPick = false;
+
+var charPick = false;
+
+var squirPick = false;
+
+var bulbPick = false;
+
+var pikaDefend = false;
+
+var charDefend = false;
+
+var squirDefend = false;
+
+var bulbDefend = false;
+
+var pickStart = true;
+
+var pickDefend = true;
 
 function go() {
 
@@ -18,6 +45,8 @@ function pikachu() {
 
     var bulbasaur = $("#enemy").prepend("<img class='pokemon bulbasaur' src='assets/images/500px-001Bulbasaur.png' alt='bulbasaur'>");
 
+    pikaPick = !pikaPick;
+
 }
 
 function charmander() {
@@ -28,6 +57,7 @@ function charmander() {
 
     var pikachu = $("#enemy").prepend("<img class='pokemon pikachu' src='assets/images/500px-025Pikachu.png' alt='pikachu'>");
 
+    charPick = !charPick;
 
 }
 
@@ -39,7 +69,7 @@ function squirtle() {
 
     var pikachu = $("#enemy").prepend("<img class='pokemon pikachu' src='assets/images/500px-025Pikachu.png' alt='pikachu'>");
 
-
+    squirPick = !squirPick;
 }
 
 function bulbasaur() {
@@ -50,6 +80,7 @@ function bulbasaur() {
 
     var pikachu = $("#enemy").prepend("<img class='pokemon pikachu' src='assets/images/500px-025Pikachu.png' alt='pikachu'>");
 
+    bulbPick = !bulbPick;
 
 }
 
@@ -66,9 +97,7 @@ go();
 
 name();
 
-var pickStart = true;
 
-var pickDefend = true;
 
 $(document).ready(function () {
 
@@ -114,13 +143,42 @@ $(document).ready(function () {
 
             $("#defend").append(this);
 
+            var pick = $(this).attr("data-pokename");
+
+            if (pick === "pikachu") {
+
+                pikaDefend = !pikaDefend;
+            }
+
+            if (pick === "charmander") {
+
+                charDefend = !charDefend;
+            }
+
+            if (pick === "bulbasaur") {
+
+                bulbDefend = !bulbDefend;
+            }
+
+            if (pick === "squirtle") {
+
+                squirDefend = !squirDefend;
+            }
 
             pickDefend = !pickDefend;
         }
 
+        console.log(charDefend);
+
     })
 
-    
+    $("#attack").on("click", function() {
+
+
+
+
+    })
+
 
 
 
