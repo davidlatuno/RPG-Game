@@ -394,6 +394,109 @@ $(document).ready(function () {
 
                     attackBool = !attackBool;
                 }
+            }
+
+            // Bulbasaur Picked
+            if (bulbPick && squirDefend) {
+
+                bulbAttack++
+
+                bulbHealth = bulbHealth - 5;
+                squirHealth = squirHealth - (5 * bulbAttack);
+
+                $("#bulbHealth").text("HP: " + bulbHealth);
+                $("#squirHealth").text("HP: " + squirHealth);
+
+                if (squirHealth <= 0) {
+
+                    winCount++;
+
+                    $("#defend").empty();
+
+                    pickDefend = !pickDefend;
+
+                    squirDefend = !squirDefend;
+
+                    if (winCount === 3 && bulbHealth > 0) {
+                        alert("YOU WIN!");
+                    }
+                }
+
+                if (bulbHealth <= 0) {
+
+                    alert("YOU LOSE");
+
+                    attackBool = !attackBool;
+                }
+
+
+            }
+
+            if (bulbPick && charDefend) {
+
+                bulbAttack++
+
+                bulbHealth = bulbHealth - 15;
+                charHealth = charHealth - (5 * bulbAttack);
+
+                $("#charHealth").text("HP: " + charHealth);
+                $("#bulbHealth").text("HP: " + bulbHealth);
+
+                if (charHealth <= 0) {
+
+                    winCount++
+
+                    $("#defend").empty();
+
+                    pickDefend = !pickDefend;
+
+                    charDefend = !charDefend;
+
+                    if (winCount === 3 && bulbHealth > 0) {
+                        alert("YOU WIN!");
+                    }
+                }
+
+                if (bulbHealth <= 0) {
+
+                    alert("YOU LOSE");
+
+                    attackBool = !attackBool;
+                }
+
+            }
+
+            if (bulbPick && pikaDefend) {
+
+                bulbAttack++
+
+                bulbHealth = bulbHealth - 10;
+                pikaHealth = pikaHealth - (5 * bulbAttack);
+
+                $("#bulbHealth").text("HP: " + bulbHealth);
+                $("#pikaHealth").text("HP: " + pikaHealth);
+
+                if (pikaHealth <= 0) {
+
+                    winCount++;
+
+                    $("#defend").empty();
+
+                    pickDefend = !pickDefend;
+
+                    pikaDefend = !pikaDefend;
+
+                    if (winCount === 3 && bulbHealth > 0) {
+                        alert("YOU WIN!");
+                    }
+                }
+
+                if (bulbHealth <= 0) {
+
+                    alert("YOU LOSE");
+
+                    attackBool = !attackBool;
+                }
 
             }
 
