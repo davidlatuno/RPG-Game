@@ -333,7 +333,7 @@ $(document).ready(function () {
 
                 squirAttack++
 
-                squirHealth = squirHealth - 10;
+                squirHealth = squirHealth - 15;
                 bulbHealth = bulbHealth - (5 * squirAttack);
 
                 $("#squirHealth").text("HP: " + squirHealth);
@@ -367,7 +367,7 @@ $(document).ready(function () {
 
                 squirAttack++
 
-                squirHealth = squirHealth - 15;
+                squirHealth = squirHealth - 10;
                 pikaHealth = pikaHealth - (5 * squirAttack);
 
                 $("#squirHealth").text("HP: " + squirHealth);
@@ -492,6 +492,110 @@ $(document).ready(function () {
                 }
 
                 if (bulbHealth <= 0) {
+
+                    alert("YOU LOSE");
+
+                    attackBool = !attackBool;
+                }
+
+            }
+
+            // Pikachu Picked
+            if (pikaPick && squirDefend) {
+
+                pikaAttack++
+
+                pikaHealth = pikaHealth - 10;
+                squirHealth = squirHealth - (5 * pikaAttack);
+
+                $("#pikaHealth").text("HP: " + pikaHealth);
+                $("#squirHealth").text("HP: " + squirHealth);
+
+                if (squirHealth <= 0) {
+
+                    winCount++;
+
+                    $("#defend").empty();
+
+                    pickDefend = !pickDefend;
+
+                    squirDefend = !squirDefend;
+
+                    if (winCount === 3 && pikaHealth > 0) {
+                        alert("YOU WIN!");
+                    }
+                }
+
+                if (pikaHealth <= 0) {
+
+                    alert("YOU LOSE");
+
+                    attackBool = !attackBool;
+                }
+
+
+            }
+
+            if (pikaPick && bulbDefend) {
+
+                pikaAttack++
+
+                pikaHealth = pikaHealth - 15;
+                bulbHealth = bulbHealth - (5 * pikaAttack);
+
+                $("#pikaHealth").text("HP: " + pikaHealth);
+                $("#bulbHealth").text("HP: " + bulbHealth);
+
+                if (bulbHealth <= 0) {
+
+                    winCount++
+
+                    $("#defend").empty();
+
+                    pickDefend = !pickDefend;
+
+                    bulbDefend = !bulbDefend;
+
+                    if (winCount === 3 && pikaHealth > 0) {
+                        alert("YOU WIN!");
+                    }
+                }
+
+                if (pikaHealth <= 0) {
+
+                    alert("YOU LOSE");
+
+                    attackBool = !attackBool;
+                }
+
+            }
+
+            if (pikaPick && charDefend) {
+
+                pikaAttack++
+
+                pikaHealth = pikaHealth - 5;
+                charHealth = charHealth - (5 * pikaAttack);
+
+                $("#charHealth").text("HP: " + charHealth);
+                $("#pikaHealth").text("HP: " + pikaHealth);
+
+                if (charHealth <= 0) {
+
+                    winCount++;
+
+                    $("#defend").empty();
+
+                    pickDefend = !pickDefend;
+
+                    charDefend = !charDefend;
+
+                    if (winCount === 3 && pikaHealth > 0) {
+                        alert("YOU WIN!");
+                    }
+                }
+
+                if (pikaHealth <= 0) {
 
                     alert("YOU LOSE");
 
