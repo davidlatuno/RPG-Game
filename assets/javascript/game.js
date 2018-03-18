@@ -298,8 +298,8 @@ $(document).ready(function () {
 
                 squirAttack++
 
-                squirHealth = squirHealth - 5;
-                charHealth = charHealth - (5 * squirAttack);
+                squirHealth = squirHealth - 7;
+                charHealth = charHealth - (6 * squirAttack);
 
                 $("#squirHealth").text("HP: " + squirHealth);
                 $("#charHealth").text("HP: " + charHealth);
@@ -333,8 +333,8 @@ $(document).ready(function () {
 
                 squirAttack++
 
-                squirHealth = squirHealth - 15;
-                bulbHealth = bulbHealth - (5 * squirAttack);
+                squirHealth = squirHealth - 20;
+                bulbHealth = bulbHealth - (6 * squirAttack);
 
                 $("#squirHealth").text("HP: " + squirHealth);
                 $("#bulbHealth").text("HP: " + bulbHealth);
@@ -367,8 +367,8 @@ $(document).ready(function () {
 
                 squirAttack++
 
-                squirHealth = squirHealth - 10;
-                pikaHealth = pikaHealth - (5 * squirAttack);
+                squirHealth = squirHealth - 12;
+                pikaHealth = pikaHealth - (6 * squirAttack);
 
                 $("#squirHealth").text("HP: " + squirHealth);
                 $("#pikaHealth").text("HP: " + pikaHealth);
