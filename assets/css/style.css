@@ -1,3 +1,17 @@
+body {
+    background: url(../images/hill6.png)
+    no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.jumbotron {
+    background-color: white !important;
+    opacity: .9 !important;
+}
+
 .pokemon {
     width: 150px;
 }

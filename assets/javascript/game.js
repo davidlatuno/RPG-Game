@@ -221,7 +221,6 @@ $(document).ready(function () {
                     attackBool = !attackBool;
                 }
 
-
             }
 
             if (charPick && bulbDefend) {
