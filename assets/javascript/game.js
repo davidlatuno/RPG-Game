@@ -506,7 +506,7 @@ $(document).ready(function () {
                 pikaAttack++
 
                 pikaHealth = pikaHealth - 10;
-                squirHealth = squirHealth - (5 * pikaAttack);
+                squirHealth = squirHealth - (9 * pikaAttack);
 
                 $("#pikaHealth").text("HP: " + pikaHealth);
                 $("#squirHealth").text("HP: " + squirHealth);
@@ -540,8 +540,8 @@ $(document).ready(function () {
 
                 pikaAttack++
 
-                pikaHealth = pikaHealth - 15;
-                bulbHealth = bulbHealth - (5 * pikaAttack);
+                pikaHealth = pikaHealth - 14;
+                bulbHealth = bulbHealth - (9 * pikaAttack);
 
                 $("#pikaHealth").text("HP: " + pikaHealth);
                 $("#bulbHealth").text("HP: " + bulbHealth);
@@ -575,7 +575,7 @@ $(document).ready(function () {
                 pikaAttack++
 
                 pikaHealth = pikaHealth - 5;
-                charHealth = charHealth - (5 * pikaAttack);
+                charHealth = charHealth - (9 * pikaAttack);
 
                 $("#charHealth").text("HP: " + charHealth);
                 $("#pikaHealth").text("HP: " + pikaHealth);
