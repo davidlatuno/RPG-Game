@@ -6,47 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Pokemon RPG</title>
 </head>
 
 <body>
 
-    <div id="startcontainer">
-        <div id="start">
+    <div class="jumbotron text-center">
+        <h1>Pokemon RPG</h1>
+    </div>
+
+    <!-- Row 1 -->
+    <div class="row">
+        <div class="col-md-6">
+            <div id="startcontainer">
+                <div id="start">
 
 
+                </div>
+
+                <h1 id="yours">Choose Your Character</h1>
+
+                <button id="attack" class="btn btn-default">
+                    <h1>Attack</h1>
+                </button>
+
+                <div id="stats"></div>
+                
+            </div>
         </div>
+        <div class="col-md-6">
+            <!-- R1 Subrow 1 -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="defendcontainer">
 
-        <h1 id="yours">Choose Your Character</h1>
-    </div>
+                        <div id="defend">
 
-    <div id="defendcontainer">
+                        </div>
 
-        <div id="defend">
+                        <h1>Defender</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- R1 Subrow 2 -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="enemy">
 
+
+                    </div>
+
+                    <h1>Enemies Available to Attack</h1>
+                </div>
+            </div>
         </div>
-
-        <h1>Defender</h1>
     </div>
-
-
-    <div id="enemy">
-
-
     </div>
-
-    <h1>Enemies Available to Attack</h1>
-
-    <button id="attack" class="btn btn-default">
-        <h1>Attack</h1>
-    </button>
-
-    <div id="stats"></div>
-
+    <!-- End of Row 1 -->
 
     <script src="assets/javascript/game.js"></script>
 </body>
