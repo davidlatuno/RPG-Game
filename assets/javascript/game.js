@@ -221,6 +221,9 @@ $(document).ready(function () {
                     attackBool = !attackBool;
                 }
 
+                $("#stats1").text("You attacked: " + (7 * charAttack));
+                $("#stats2").text("Squirtle attacked: " + 16);
+
             }
 
             if (charPick && bulbDefend) {
@@ -255,6 +258,9 @@ $(document).ready(function () {
                     attackBool = !attackBool;
                 }
 
+                $("#stats1").text("You attacked: " + (7 * charAttack));
+                $("#stats2").text("Bulbasaur attacked: " + 5);
+
             }
 
             if (charPick && pikaDefend) {
@@ -288,6 +294,9 @@ $(document).ready(function () {
 
                     attackBool = !attackBool;
                 }
+
+                $("#stats1").text("You attacked: " + (7 * charAttack));
+                $("#stats2").text("Pikachu attacked: " + 12);
 
             }
 
@@ -325,6 +334,8 @@ $(document).ready(function () {
                     attackBool = !attackBool;
                 }
 
+                $("#stats1").text("You attacked: " + (6 * squirAttack));
+                $("#stats2").text("Charmander attacked: " + 7);
 
             }
 
@@ -360,6 +371,10 @@ $(document).ready(function () {
                     attackBool = !attackBool;
                 }
 
+                $("#stats1").text("You attacked: " + (6 * squirAttack));
+                $("#stats2").text("Bulbasaur attacked: " + 20);
+                
+
             }
 
             if (squirPick && pikaDefend) {
@@ -393,6 +408,9 @@ $(document).ready(function () {
 
                     attackBool = !attackBool;
                 }
+
+                $("#stats1").text("You attacked: " + (6 * squirAttack));
+                $("#stats2").text("Pikachu attacked: " + 12);
             }
 
             // Bulbasaur Picked
@@ -428,6 +446,8 @@ $(document).ready(function () {
                     attackBool = !attackBool;
                 }
 
+                $("#stats1").text("You attacked: " + (4 * bulbAttack));
+                $("#stats2").text("Squirtle attacked: " + 8);
 
             }
 
@@ -463,6 +483,8 @@ $(document).ready(function () {
                     attackBool = !attackBool;
                 }
 
+                $("#stats1").text("You attacked: " + (4 * bulbAttack));
+                $("#stats2").text("Charmander attacked: " + 19);
             }
 
             if (bulbPick && pikaDefend) {
@@ -496,6 +518,9 @@ $(document).ready(function () {
 
                     attackBool = !attackBool;
                 }
+
+                $("#stats1").text("You attacked: " + (4 * bulbAttack));
+                $("#stats2").text("Pikachu attacked: " + 13);
 
             }
 
@@ -532,6 +557,8 @@ $(document).ready(function () {
                     attackBool = !attackBool;
                 }
 
+                $("#stats1").text("You attacked: " + (9 * pikaAttack));
+                $("#stats2").text("Squirtle attacked: " + 10);
 
             }
 
@@ -567,6 +594,8 @@ $(document).ready(function () {
                     attackBool = !attackBool;
                 }
 
+                $("#stats1").text("You attacked: " + (9 * pikaAttack));
+                $("#stats2").text("Bulbasaur attacked: " + 14);
             }
 
             if (pikaPick && charDefend) {
@@ -601,9 +630,10 @@ $(document).ready(function () {
                     attackBool = !attackBool;
                 }
 
+                $("#stats1").text("You attacked: " + (9 * pikaAttack));
+                $("#stats2").text("Squirtle attacked: " + 5);
+
             }
-
-
         }
     })
 })

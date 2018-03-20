@@ -42,3 +42,16 @@ body {
 #defend .health {
     border: 1px solid red;
 }
+
+#charHealth, #bulbHealth, #pikaHealth, #squirHealth {
+
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#stats1, #stats2 {
+
+    font-size: 25px;
+
+}
