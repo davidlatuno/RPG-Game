@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x:hidden;
+}
+
 body {
     background: url(../images/hill6.png)
     no-repeat center center fixed;
