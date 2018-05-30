@@ -1,7 +1,7 @@
 # RPG-Game
 RPG game with character/enemy choice
 
-Made with vanilla JavaScript, HTML, and CSS
+Made with JavaScript, jQuery, HTML, and CSS
 
 Url Link: https://davidlatuno.github.io/RPG-Game/
 
